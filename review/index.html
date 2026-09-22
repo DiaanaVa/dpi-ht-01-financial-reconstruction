@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Decision Review · DPI HT-01</title>
+  <meta name="description" content="Review and certification workspace for 100 accounting decisions">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%230b1f35%22/><path d=%22M16 42h32M20 36V22m12 14V14m12 22V26%22 stroke=%22%235ed4c5%22 stroke-width=%226%22 stroke-linecap=%22round%22/></svg>">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="mark">DPI</span><span>HT-01 Financial Reconstruction</span></a>
+    <nav><a href="/">Board view</a><a class="active" href="/review/">Decision review</a><a href="/submission.json">Submission JSON</a></nav>
+  </header>
+  <main class="shell review-shell">
+    <section class="review-intro">
+      <div><p class="eyebrow">Certification workspace</p><h1>100 decisions. Every one reviewable.</h1><p class="lede">The 75 operational decisions require a final answer, evidence and confidence. The 25 material judgments also preserve the first AI proposal, independent challenge, final reasoning, statement effect and whether the answer changed.</p></div>
+      <div class="hero-status"><span class="status pending" id="review-cert-status">Loading…</span><p>This page preserves the complete AI review trail and any unresolved uncertainty.</p></div>
+    </section>
+    <section class="review-stats" id="review-stats"></section>
+    <section class="panel review-alert" id="review-uncertainties"></section>
+    <section class="panel controls">
+      <label>Search<input id="search" type="search" placeholder="Decision, answer or evidence…"></label>
+      <label>Review tier<select id="tier"><option value="all">All 100</option><option value="operational">Operational (75)</option><option value="material_judgment" selected>Material judgments (25)</option></select></label>
+      <label>Confidence<select id="confidence"><option value="all">All levels</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select></label>
+      <label>Focus<select id="focus"><option value="all">All decisions</option><option value="disagreement">Agent disagreements</option><option value="changed">Changed from AI</option><option value="low">Low confidence</option><option value="unresolved">Unresolved uncertainty</option></select></label>
+    </section>
+    <p class="result-count" id="result-count"></p>
+    <section class="decision-list" id="decisions"></section>
+  </main>
+  <footer><span>DPI HT-01 · Decision audit trail</span><span>Original evidence remains the authority</span></footer>
+  <script src="/review/review.js"></script>
+</body>
+</html>
