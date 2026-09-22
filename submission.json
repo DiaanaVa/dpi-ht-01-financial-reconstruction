@@ -602,7 +602,7 @@
       "category": "evidence_matching",
       "reviewTier": "operational",
       "question": "Resolve the source and treatment of Water-damaged stock.",
-      "answer": "Write off €22,000 damaged stock and recognize separate €2,000 disposal provision.",
+      "answer": "Write off €22,000 damaged stock. The certified reconstruction retains a separate €2,000 disposal provision, conditional on evidence that a legal or constructive present obligation existed at 31 August 2026.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf, pp. 1–2, basement premium stock",
         "11 Evidence Received After Takeover.pdf, p. 1, independent assessment",
@@ -828,16 +828,17 @@
       "confidence": "high",
       "certificationStatus": "certified_by_student",
       "aiProposal": "€70,000 owner distribution",
-      "independentChallenge": "Independent position: Classify €70,000 villa as owner distribution. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
-      "studentReasoning": "The villa is in the founder's personal name and no customer meeting occurred. The €70,000 payment is an owner distribution, not a business expense.",
+      "independentChallenge": "Selected treatment: classify the €70,000 villa payment as an owner distribution. Rejected alternative: retain it as a business expense. The alternative is rejected because the villa is in the founder's personal name, no customer meeting occurred and the bank evidence identifies the payment; the founder's 'customer research' label is not supported by business evidence.",
+      "studentReasoning": "The villa is in the founder's personal name and no customer meeting occurred. Reversing the incorrectly recorded expense increases profit by €70,000, while recording the same amount as an owner distribution reduces equity by €70,000. Those equity movements offset, so the reclassification does not create additional net assets or closing equity.",
+      "alternativeTreatment": "Retain the €70,000 villa payment as a business expense. Rejected because the evidence shows a personal owner payment rather than a business purpose.",
       "statementEffect": {
         "profit": 70000,
         "cash": 0,
         "assets": 0,
         "liabilities": 0,
-        "equity": 70000
+        "equity": 0
       },
-      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "effectBasis": "Reversing the expense increases profit and retained earnings by €70,000; recognizing a €70,000 owner distribution reduces equity by the same amount. Net effect on cash, assets, liabilities and total closing equity is €0.",
       "changedFromAI": false
     },
     {
@@ -1050,7 +1051,7 @@
       "category": "classification",
       "reviewTier": "material_judgment",
       "question": "Classify Damaged stock.",
-      "answer": "Classify €22,000 as inventory write-off; €2,000 disposal estimate as provision/expense.",
+      "answer": "Classify €22,000 as an inventory write-off. Retain the certified €2,000 disposal provision conditionally, subject to evidence of a legal or constructive present obligation at 31 August 2026.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf, pp. 1–2, count and disposal quote",
         "05 Warehouse Count Marta Notes.pdf pp.1-2",
@@ -1059,8 +1060,9 @@
       "confidence": "medium",
       "certificationStatus": "certified_by_student",
       "aiProposal": "€22,000 inventory write-down expense; disposal estimate €2,000 disclosed",
-      "independentChallenge": "Independent position: Classify €22,000 as inventory write-off; €2,000 disposal estimate as provision/expense. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
-      "studentReasoning": "The €22,000 basement stock has no saleable value and is written off. The post-takeover assessment says disposal will cost approximately €2,000 and confirms the existing damage, so a €2,000 provision is included with medium confidence.",
+      "independentChallenge": "Selected treatment: write off the €22,000 carrying value and retain the certified €2,000 disposal provision. Alternative: recognize no disposal provision and expense the removal cost only when a present obligation arises or disposal occurs. The case files prove the damage existed at 31 August and quantify an expected removal cost, but they do not document a legal requirement, communicated commitment or other constructive obligation that left the company with no realistic alternative to settlement. The provision is therefore conditional and requires additional present-obligation evidence; the alternative is technically stronger if that evidence cannot be obtained.",
+      "studentReasoning": "The €22,000 basement stock has no saleable value and is written off. The independent assessment confirms the pre-reporting-date damage and estimates removal at €2,000, but an expected cost and quote alone do not establish a present obligation. The certified reconstruction retains the €2,000 provision conditionally; support requires evidence of a legal or constructive disposal obligation existing at 31 August. Without that evidence, the alternative is to recognize the disposal expense only when the obligation arises or disposal occurs.",
+      "alternativeTreatment": "Do not recognize a €2,000 provision at 31 August; recognize the disposal expense only when a legal or constructive obligation arises or disposal occurs. This becomes the required treatment if no present-obligation evidence is obtained.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -1068,7 +1070,7 @@
         "liabilities": 2000,
         "equity": -24000
       },
-      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "effectBasis": "Selected certified treatment: €22,000 inventory write-off plus a conditional €2,000 provision. The provision component decreases profit and equity by €2,000 and increases liabilities by €2,000; it remains subject to evidence of a present obligation.",
       "changedFromAI": true
     },
     {
@@ -1335,7 +1337,7 @@
       "category": "estimation",
       "reviewTier": "material_judgment",
       "question": "Estimate Damaged inventory write-off and document the basis.",
-      "answer": "€22,000 damaged-inventory write-off; plus €2,000 disposal provision.",
+      "answer": "€22,000 damaged-inventory write-off; retain the certified €2,000 disposal provision conditionally, subject to evidence of a present obligation at 31 August 2026.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf, pp. 1–2, €22k basement and no saleable value",
         "05 Warehouse Count Marta Notes.pdf pp.1-2",
@@ -1344,8 +1346,9 @@
       "confidence": "high",
       "certificationStatus": "certified_by_student",
       "aiProposal": "€22,000 write-down of damaged stock",
-      "independentChallenge": "Independent position: €22,000 damaged-inventory write-off; plus €2,000 disposal provision. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
-      "studentReasoning": "The damaged stock's €22,000 carrying amount is reduced to zero. A separate €2,000 disposal provision is included because the independent assessment confirms an expected disposal cost arising from the existing damage.",
+      "independentChallenge": "Selected treatment: reduce the damaged stock's €22,000 carrying amount to zero and retain the certified €2,000 disposal provision. Alternative: recognize no provision and expense disposal only when a present obligation arises or disposal occurs. The quote and post-takeover assessment confirm the existing damage and estimate, but do not by themselves prove a legal or constructive obligation at 31 August. The provision remains conditional on obtaining evidence that the company had no realistic alternative to settlement; absent that evidence, the alternative is technically stronger.",
+      "studentReasoning": "The damaged stock's €22,000 carrying amount is reduced to zero because it has no saleable value. For the separate €2,000 removal cost, the existing damage is the past event, but the available files do not establish the additional legal or constructive present obligation required for a provision. The certified reconstruction retains the provision conditionally and explicitly identifies the missing obligation evidence. If no such evidence exists, the €2,000 should be recognized only when the obligation arises or disposal occurs.",
+      "alternativeTreatment": "Recognize only the €22,000 inventory write-off at 31 August. Do not recognize the €2,000 disposal provision until a legal or constructive present obligation arises or disposal occurs.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -1353,7 +1356,7 @@
         "liabilities": 2000,
         "equity": -24000
       },
-      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "effectBasis": "Selected certified treatment: €22,000 inventory write-off plus a conditional €2,000 provision. The provision component reduces profit and equity by €2,000 and increases liabilities by €2,000; it is not supported merely by the expected future cost.",
       "changedFromAI": true
     },
     {
@@ -1421,16 +1424,17 @@
       "confidence": "medium",
       "certificationStatus": "certified_by_student",
       "aiProposal": "€121,000 closing saleable inventory; €9,000 unexplained count surplus",
-      "independentChallenge": "Independent position: €112,000 closing inventory on roll-forward; physical saleable count is €121,000, an unresolved €9,000 contradiction. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
-      "studentReasoning": "The accounting roll-forward gives €112,000: €80,000 opening inventory plus €459,000 purchases less €405,000 consumption and €22,000 write-off. The €121,000 saleable count creates an unresolved €9,000 difference; no unsupported gain is recognized.",
+      "independentChallenge": "Selected treatment: €112,000 closing inventory from the accounting roll-forward and no unsupported gain. Alternative: recognize the €121,000 physical saleable count, which would increase inventory, profit and equity by €9,000 compared with the selected treatment. The alternative is rejected because the €9,000 count surplus has no reconciled SKU, unit-cost or cut-off support.",
+      "studentReasoning": "The accounting roll-forward gives €112,000: €80,000 opening inventory plus €459,000 purchases less €405,000 consumption and €22,000 write-off. The €121,000 physical saleable count creates a separate unresolved €9,000 difference. That difference is not a recognized loss or gain and therefore has no statement effect until supporting evidence resolves it.",
+      "alternativeTreatment": "Recognize €121,000 from the physical saleable count, increasing inventory, profit and equity by €9,000 compared with the selected treatment. Rejected because the difference lacks reconciled SKU, unit-cost and cut-off evidence.",
       "statementEffect": {
         "profit": -22000,
         "cash": 0,
-        "assets": -31000,
+        "assets": -22000,
         "liabilities": 0,
         "equity": -22000
       },
-      "effectBasis": "Compared with management inventory of €143,000. The €22,000 write-off affects profit; the remaining €9,000 count difference is unresolved and is not recognized as a gain.",
+      "effectBasis": "Recognized effect only: the €22,000 damaged-stock write-off reduces profit, assets and equity equally by €22,000. The separate €9,000 difference between the €121,000 physical count and €112,000 roll-forward remains unresolved and has no recognized statement effect.",
       "changedFromAI": true
     },
     {
@@ -1726,7 +1730,7 @@
       "category": "board_decision",
       "reviewTier": "operational",
       "question": "Dispose of damaged stock",
-      "answer": "Yes — dispose of damaged stock after documenting write-off and €2,000 disposal provision.",
+      "answer": "Yes — dispose of damaged stock after documenting the write-off. Retain the certified €2,000 provision only if evidence confirms a legal or constructive present obligation existed at 31 August; otherwise expense disposal when the obligation arises or disposal occurs.",
       "evidence": [
         "05 Warehouse Count Marta Notes.pdf, p. 2, disposal quote",
         "05 Warehouse Count Marta Notes.pdf pp.1-2"
@@ -1845,7 +1849,7 @@
       "disposalProvision": 2000,
       "legalProvision": 25000,
       "insurance": 0,
-      "note": "Insurance remains unquantified; €0 is not evidence that no policy existed."
+      "note": "Insurance remains unquantified; €0 is not evidence that no policy existed. The certified €2,000 disposal provision is conditional because the current files quantify the expected cost but do not document a legal or constructive present obligation at 31 August."
     },
     "ppeAndDepreciation": {
       "openingCost": 180000,
@@ -2031,8 +2035,8 @@
     {
       "issue": "Disposal provision",
       "amountOrRange": "€2,000",
-      "treatment": "Recognized because post-period evidence confirms expected disposal cost from existing damage",
-      "evidenceNeeded": "Legal or constructive obligation and disposal commitment",
+      "treatment": "Provision retained in the certified reconstruction only conditionally. The evidence confirms existing damage and estimates removal cost, but an expected cost alone is not a present obligation. Alternative: no provision until a legal or constructive obligation arises or disposal occurs.",
+      "evidenceNeeded": "Evidence that a legal requirement, communicated commitment or other constructive obligation existed at 31 August and left the company with no realistic alternative to settlement",
       "confidence": "medium"
     },
     {
