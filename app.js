@@ -1,3 +1,4 @@
+// Deployment source: connected Git repository.
 const euro = value => new Intl.NumberFormat('en-IE', {
   style: 'currency', currency: 'EUR', maximumFractionDigits: 0
 }).format(value);
