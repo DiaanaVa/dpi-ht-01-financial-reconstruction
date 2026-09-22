@@ -1,0 +1,2065 @@
+{
+  "schemaVersion": "1.0",
+  "caseId": "DPI-HT-01",
+  "reportingDate": "2026-08-31",
+  "currency": "EUR",
+  "certificationStatus": "CERTIFIED_BY_STUDENT",
+  "student": {
+    "id": "dv25064",
+    "name": "Diāna Vasiļjeva"
+  },
+  "evidence": [
+    {
+      "file": "01 START HERE - Student Assignment.pdf",
+      "scope": "Assignment requirements and submission sequence",
+      "reliability": "authoritative assignment"
+    },
+    {
+      "file": "02 FINANCE REFERENCE - Use When You Get Stuck.pdf",
+      "scope": "Accounting guidance only",
+      "reliability": "reference, not case evidence"
+    },
+    {
+      "file": "01 GIVE TO CODEX - Answer Template.json",
+      "scope": "D001-D100 structure",
+      "reliability": "authoritative schema input"
+    },
+    {
+      "file": "02 GIVE TO CODEX - Submission Rules.json",
+      "scope": "Submission validation rules",
+      "reliability": "authoritative schema input"
+    },
+    {
+      "file": "00 BOARD ORDER READ FIRST.pdf",
+      "scope": "Reporting date, currency and evidence hierarchy",
+      "reliability": "high"
+    },
+    {
+      "file": "01 USE THIS NUMBERS FINAL v9.xlsx",
+      "scope": "Management claims: profit €312k, cash €186k",
+      "reliability": "low; contradicted"
+    },
+    {
+      "file": "02 Bank Export August.csv",
+      "scope": "Opening/closing cash and transaction-level receipts/payments",
+      "reliability": "high"
+    },
+    {
+      "file": "03 CRM Export Cleaned FINAL.xlsx",
+      "scope": "Invoices, collections and delivery status",
+      "reliability": "medium"
+    },
+    {
+      "file": "04 Contracts Returns and Angry Customers.pdf",
+      "scope": "Accepted revenue, September delivery dates and R-17",
+      "reliability": "high"
+    },
+    {
+      "file": "05 Warehouse Count Marta Notes.pdf",
+      "scope": "Count, consumption, damaged stock and disposal quote",
+      "reliability": "high with internal €9k contradiction"
+    },
+    {
+      "file": "06 Purchases Invoices and Goods Received.pdf",
+      "scope": "Purchases, closing supplier balances, PPE and repair",
+      "reliability": "high"
+    },
+    {
+      "file": "07 Payroll Bonuses Contractors NEW.xlsx",
+      "scope": "Payroll expense, cash paid and opening unpaid payroll",
+      "reliability": "medium"
+    },
+    {
+      "file": "08 Assets Repairs Leases Maybe.xlsx",
+      "scope": "Opening PPE and depreciation estimate",
+      "reliability": "medium-low"
+    },
+    {
+      "file": "09 Loans Owner Card and Legal Problems.pdf",
+      "scope": "Debt, interest, owner spending and legal claim",
+      "reliability": "high"
+    },
+    {
+      "file": "10 Email and WhatsApp Dump DO NOT FORWARD.pdf",
+      "scope": "Management pressure and attempted manipulation",
+      "reliability": "low; corroborative only"
+    },
+    {
+      "file": "11 Evidence Received After Takeover.pdf",
+      "scope": "External confirmation of cash, debt, interest, claim, R-17 and stock",
+      "reliability": "high"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D001",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of NorthStar receipt.",
+      "answer": "€180,000 collection of NorthStar receivable/revenue already earned.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-02-12 RCPT-NS",
+        "04 Contracts Returns and Angry Customers.pdf, p. 1, INV-26012",
+        "03 CRM Export Cleaned FINAL.xlsx, C-001, row 4",
+        "02 Bank Export August.csv 2026-02-12 RCPT-NS €180,000",
+        "04 Contracts Returns and Angry Customers.pdf p.1 INV-26012 accepted 12 Feb"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D002",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Freedom receipt 1.",
+      "answer": "€142,000 collection against Freedom €200,000 revenue; €58,000 AR remains.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-03-18 RCPT-FF",
+        "04 Contracts Returns and Angry Customers.pdf, p. 1, INV-26031",
+        "03 CRM Export Cleaned FINAL.xlsx, C-002, row 5",
+        "02 Bank Export August.csv 2026-03-18 RCPT-FF €142,000",
+        "04 Contracts Returns and Angry Customers.pdf p.1 INV-26031 €200,000; €58,000 remains"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D003",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Phoenix receipt.",
+      "answer": "€70,000 collection against Phoenix €100,000 completed event; €30,000 AR remains.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-04-29 RCPT-PHX",
+        "04 Contracts Returns and Angry Customers.pdf, p. 1, INV-26047",
+        "03 CRM Export Cleaned FINAL.xlsx, C-003, row 6",
+        "02 Bank Export August.csv 2026-04-29 RCPT-PHX €70,000",
+        "04 Contracts Returns and Angry Customers.pdf p.1 INV-26047 completed 29 Apr"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D004",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Liberty receipt.",
+      "answer": "€95,000 collection against Liberty €120,000 delivered order; €25,000 AR remains.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-06-20 RCPT-LIB",
+        "04 Contracts Returns and Angry Customers.pdf, p. 1, INV-26063",
+        "03 CRM Export Cleaned FINAL.xlsx, C-004, row 7",
+        "02 Bank Export August.csv 2026-06-20 RCPT-LIB €95,000",
+        "04 Contracts Returns and Angry Customers.pdf p.1 INV-26063 delivered 20 Jun; €25,000 unpaid"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D005",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Opening receivable receipt.",
+      "answer": "€35,000 settlement of opening receivable; not current-period revenue.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-01-10 RCPT-001",
+        "02 Bank Export August.csv 2026-01-10 RCPT-001 Old customer AR settlement €35,000"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D006",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Finally Single web receipts.",
+      "answer": "€250,000 Finally Single web collections; €20,000 AR remains.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-01 PLAT-FSB",
+        "03 CRM Export Cleaned FINAL.xlsx, WEB-FSB, row 8",
+        "02 Bank Export August.csv 2026-08-01 PLAT-FSB €250,000",
+        "03 CRM Export Cleaned FINAL.xlsx WEB-FSB €270,000 sales / €250,000 cash"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D007",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Never Call Back web receipts.",
+      "answer": "€37,000 Never Call Back web collections; €53,000 gross AR before R-17 write-off.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-15 PLAT-NCB",
+        "03 CRM Export Cleaned FINAL.xlsx, WEB-NCB, row 9",
+        "04 Contracts Returns and Angry Customers.pdf, p. 2, Return R-17",
+        "02 Bank Export August.csv 2026-08-15 PLAT-NCB €37,000",
+        "03 CRM Export Cleaned FINAL.xlsx WEB-NCB €90,000 sales / €37,000 cash"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D008",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of New Beginnings deposit.",
+      "answer": "€60,000 September customer deposit; contract liability, not August revenue.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-28 DEP-NB",
+        "04 Contracts Returns and Angry Customers.pdf, p. 2, NB-SEP",
+        "02 Bank Export August.csv 2026-08-28 DEP-NB €60,000",
+        "04 Contracts Returns and Angry Customers.pdf p.2 NB-SEP delivery 15 Sep"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D009",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Fresh Freedom deposit.",
+      "answer": "€30,000 September customer deposit; contract liability, not August revenue.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-29 DEP-FF2",
+        "04 Contracts Returns and Angry Customers.pdf, p. 2, FF-SEP",
+        "02 Bank Export August.csv 2026-08-29 DEP-FF2 €30,000",
+        "04 Contracts Returns and Angry Customers.pdf p.2 FF-SEP delivery 24 Sep"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D010",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Box supplier payment.",
+      "answer": "€105,000 supplier payment; €25,000 remains payable.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 SUP-BOX",
+        "06 Purchases Invoices and Goods Received.pdf, p. 1, BoxWorks invoice",
+        "02 Bank Export August.csv 2026-08-31 SUP-BOX €105,000",
+        "06 Purchases Invoices and Goods Received.pdf p.1 BoxWorks invoice €130,000; unpaid €25,000"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D011",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Glass supplier payment.",
+      "answer": "€92,000 supplier payment; €28,000 remains payable.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 SUP-GLS",
+        "06 Purchases Invoices and Goods Received.pdf, p. 1, Glass & Drama invoice",
+        "02 Bank Export August.csv 2026-08-31 SUP-GLS €92,000",
+        "06 Purchases Invoices and Goods Received.pdf p.1 Glass & Drama invoice €120,000; unpaid €28,000"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D012",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Print supplier payment.",
+      "answer": "€81,000 supplier payment; €14,000 remains payable.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 SUP-PRT",
+        "06 Purchases Invoices and Goods Received.pdf, p. 1, Print Again invoice",
+        "02 Bank Export August.csv 2026-08-31 SUP-PRT €81,000",
+        "06 Purchases Invoices and Goods Received.pdf p.1 Print Again invoice €95,000; unpaid €14,000"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D013",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Event supplier payment.",
+      "answer": "€100,000 supplier payment; €59,000 remains payable.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 SUP-EVT",
+        "06 Purchases Invoices and Goods Received.pdf, p. 1, Event Things €114,000 and €59,000 payable",
+        "02 Bank Export August.csv 2026-08-31 SUP-EVT €100,000",
+        "06 Purchases Invoices and Goods Received.pdf p.1 Event Things invoice €114,000; unpaid €59,000"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D014",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of January payroll.",
+      "answer": "No separate January payroll bank transaction is evidenced; included in €231,000 Jan–Aug combined payment.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PAYROLL combined Jan–Aug",
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "02 Bank Export August.csv 2026-08-31 PAYROLL €231,000 combined",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL cash paid €231,000"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D015",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of February payroll.",
+      "answer": "No separate February payroll bank transaction is evidenced; included in €231,000 Jan–Aug combined payment.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PAYROLL combined Jan–Aug",
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "02 Bank Export August.csv 2026-08-31 PAYROLL €231,000 combined",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL cash paid €231,000"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D016",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of March payroll.",
+      "answer": "No separate March payroll bank transaction is evidenced; included in €231,000 Jan–Aug combined payment.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PAYROLL combined Jan–Aug",
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "02 Bank Export August.csv 2026-08-31 PAYROLL €231,000 combined",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL cash paid €231,000"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D017",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of April payroll.",
+      "answer": "No separate April payroll bank transaction is evidenced; included in €231,000 Jan–Aug combined payment.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PAYROLL combined Jan–Aug",
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "02 Bank Export August.csv 2026-08-31 PAYROLL €231,000 combined",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL cash paid €231,000"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D018",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of May payroll.",
+      "answer": "No separate May payroll bank transaction is evidenced; included in €231,000 Jan–Aug combined payment.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PAYROLL combined Jan–Aug",
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "02 Bank Export August.csv 2026-08-31 PAYROLL €231,000 combined",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL cash paid €231,000"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D019",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of June payroll.",
+      "answer": "No separate June payroll bank transaction is evidenced; included in €231,000 Jan–Aug combined payment.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PAYROLL combined Jan–Aug",
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "02 Bank Export August.csv 2026-08-31 PAYROLL €231,000 combined",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL cash paid €231,000"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D020",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of July payroll.",
+      "answer": "No separate July payroll bank transaction is evidenced; included in €231,000 Jan–Aug combined payment.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PAYROLL combined Jan–Aug",
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "02 Bank Export August.csv 2026-08-31 PAYROLL €231,000 combined",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL cash paid €231,000"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D021",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of August payroll.",
+      "answer": "No separate August payroll bank transaction is evidenced; included in €231,000 Jan–Aug combined payment.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PAYROLL combined Jan–Aug",
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "02 Bank Export August.csv 2026-08-31 PAYROLL €231,000 combined",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL cash paid €231,000"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D022",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Rent payments.",
+      "answer": "€48,000 rent payment; operating expense.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 RENT",
+        "02 Bank Export August.csv 2026-08-31 RENT €48,000"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D023",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Meta and influencer payments.",
+      "answer": "€55,000 Meta/TikTok/influencer payment; marketing expense.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 MKT",
+        "02 Bank Export August.csv 2026-08-31 MKT €55,000"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D024",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Software payments.",
+      "answer": "€16,000 software subscriptions; operating expense.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 SOFT",
+        "02 Bank Export August.csv 2026-08-31 SOFT €16,000"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D025",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Utilities payments.",
+      "answer": "€12,000 utilities; operating expense.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 UTIL",
+        "02 Bank Export August.csv 2026-08-31 UTIL €12,000"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D026",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Repair transfer.",
+      "answer": "€10,000 repair expense, not PPE.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 REPAIR",
+        "06 Purchases Invoices and Goods Received.pdf, p. 2, repair invoice R-771",
+        "02 Bank Export August.csv REPAIR €10,000",
+        "06 Purchases Invoices and Goods Received.pdf p.2 R-771 restored normal output only"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D027",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Packaging machine payment.",
+      "answer": "€60,000 packaging machine: PPE/investing outflow.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 CAPEX-PACK",
+        "06 Purchases Invoices and Goods Received.pdf, p. 2, A-910",
+        "02 Bank Export August.csv CAPEX-PACK €60,000",
+        "06 Purchases Invoices and Goods Received.pdf p.2 A-910 installed 10 May"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D028",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Photo booth payment.",
+      "answer": "€20,000 photo booth: PPE/investing outflow.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 CAPEX-PHOTO",
+        "06 Purchases Invoices and Goods Received.pdf, p. 2, P-404",
+        "02 Bank Export August.csv CAPEX-PHOTO €20,000",
+        "06 Purchases Invoices and Goods Received.pdf p.2 P-404 available 10 May"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D029",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Loan receipt.",
+      "answer": "€50,000 bank borrowing; debt/financing inflow, not income.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-03-01 LOAN-ADV",
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, new advance",
+        "02 Bank Export August.csv LOAN-ADV €50,000",
+        "09 Loans Owner Card and Legal Problems.pdf p.1 agreement requires repayment"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D030",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Loan repayments.",
+      "answer": "€19,000 principal repayment; financing outflow.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PRINCIPAL",
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, principal repaid",
+        "02 Bank Export August.csv PRINCIPAL €19,000",
+        "09 Loans Owner Card and Legal Problems.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D031",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Interest payments.",
+      "answer": "€10,000 interest paid; €12,000 period expense, €2,000 payable.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 INT",
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, loan schedule",
+        "02 Bank Export August.csv INT €10,000",
+        "09 Loans Owner Card and Legal Problems.pdf p.1 expense €12,000",
+        "11 Evidence Received After Takeover.pdf p.1 unpaid interest €2,000"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D032",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Villa deposit.",
+      "answer": "€70,000 villa payment is owner distribution.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 VILLA",
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, villa held personally",
+        "02 Bank Export August.csv VILLA €70,000",
+        "09 Loans Owner Card and Legal Problems.pdf p.1 villa personal; no customer meeting"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D033",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Owner card spending.",
+      "answer": "€40,000 other owner-card spending is owner distribution absent business support.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 OWNERCARD",
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, other owner card",
+        "02 Bank Export August.csv OWNERCARD €40,000",
+        "09 Loans Owner Card and Legal Problems.pdf p.1 owner card spending"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D034",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Insurance movement.",
+      "answer": "No insurance movement is evidenced; recognize €0 and flag unquantified uncertainty.",
+      "evidence": [
+        "02 Bank Export August.csv, all rows, no insurance line",
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!A3:E8, no insurance detail",
+        "02 Bank Export August.csv complete export has no insurance transaction",
+        "00 BOARD ORDER READ FIRST.pdf p.1 do not invent evidence"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D035",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Water-damaged stock.",
+      "answer": "Write off €22,000 damaged stock and recognize separate €2,000 disposal provision.",
+      "evidence": [
+        "05 Warehouse Count Marta Notes.pdf, pp. 1–2, basement premium stock",
+        "11 Evidence Received After Takeover.pdf, p. 1, independent assessment",
+        "05 Warehouse Count Marta Notes.pdf pp.1-2",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D036",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Customer insolvency.",
+      "answer": "Write off €18,000 R-17 receivable.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 2, R-17",
+        "11 Evidence Received After Takeover.pdf, p. 1, liquidator notice",
+        "04 Contracts Returns and Angry Customers.pdf p.2",
+        "11 Evidence Received After Takeover.pdf p.1 liquidator notice"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D037",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Former employee claim.",
+      "answer": "Recognize €25,000 former-employee claim provision.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 2, 31 August counsel",
+        "11 Evidence Received After Takeover.pdf, p. 1, counsel confirmation",
+        "09 Loans Owner Card and Legal Problems.pdf p.2",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D038",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Purchase total.",
+      "answer": "Purchases €459,000; closing AP €126,000; bank supplier payments €378,000 imply opening AP €45,000.",
+      "evidence": [
+        "06 Purchases Invoices and Goods Received.pdf, p. 1, four invoices and confirmed balances",
+        "02 Bank Export August.csv, 2026-08-31 SUP-BOX/SUP-GLS/SUP-PRT/SUP-EVT",
+        "06 Purchases Invoices and Goods Received.pdf p.1",
+        "02 Bank Export August.csv supplier payments"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D039",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Cash collections total.",
+      "answer": "Total customer collections/deposits €899,000.",
+      "evidence": [
+        "02 Bank Export August.csv, RCPT-001, RCPT-NS/FF/PHX/LIB, PLAT-FSB/NCB, DEP-NB/FF2",
+        "02 Bank Export August.csv customer receipt/deposit rows"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D040",
+      "category": "evidence_matching",
+      "reviewTier": "operational",
+      "question": "Resolve the source and treatment of Closing bank balance.",
+      "answer": "Closing bank balance €60,000.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 OWNERCARD, Balance EUR 60,000",
+        "11 Evidence Received After Takeover.pdf, p. 1, bank confirmation",
+        "02 Bank Export August.csv final balance €60,000",
+        "11 Evidence Received After Takeover.pdf p.1 bank confirmation"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D041",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify September customer deposits.",
+      "answer": "€90,000 contract liabilities; no August revenue.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 2, NB-SEP and FF-SEP",
+        "04 Contracts Returns and Angry Customers.pdf p.2 NB-SEP/FF-SEP",
+        "02 Bank Export August.csv DEP-NB/DEP-FF2"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€90,000 contract liabilities; exclude from August revenue",
+      "independentChallenge": "Independent position: €90,000 contract liabilities; no August revenue. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The two deposits relate to September delivery dates. Cash received before performance is a contract liability at 31 August, so €90,000 is excluded from August revenue.",
+      "statementEffect": {
+        "profit": -90000,
+        "cash": 0,
+        "assets": 0,
+        "liabilities": 90000,
+        "equity": -90000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D042",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify New bank borrowing.",
+      "answer": "€50,000 bank debt and financing inflow; not income.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, bank advance",
+        "09 Loans Owner Card and Legal Problems.pdf p.1",
+        "02 Bank Export August.csv LOAN-ADV"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€50,000 loan principal; not income",
+      "independentChallenge": "Independent position: €50,000 bank debt and financing inflow; not income. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The signed agreement requires repayment and the bank records the advance. The €50,000 is debt and a financing inflow, not income.",
+      "statementEffect": {
+        "profit": -50000,
+        "cash": 0,
+        "assets": 0,
+        "liabilities": 50000,
+        "equity": -50000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D043",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Packaging machine.",
+      "answer": "Capitalize €60,000 as PPE; depreciate from 10 May.",
+      "evidence": [
+        "06 Purchases Invoices and Goods Received.pdf, p. 2, A-910",
+        "06 Purchases Invoices and Goods Received.pdf p.2 A-910",
+        "08 Assets Repairs Leases Maybe.xlsx Pack-O-Matic row"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "Capitalize €60,000 packaging machine in PPE",
+      "independentChallenge": "Independent position: Capitalize €60,000 as PPE; depreciate from 10 May. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The €60,000 machine is a controlled long-term resource installed and available for use on 10 May. It is PPE and is depreciated from that date.",
+      "statementEffect": {
+        "profit": 60000,
+        "cash": 0,
+        "assets": 60000,
+        "liabilities": 0,
+        "equity": 60000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D044",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Photo booth.",
+      "answer": "Capitalize €20,000 as PPE; depreciate from 10 May.",
+      "evidence": [
+        "06 Purchases Invoices and Goods Received.pdf, p. 2, P-404",
+        "06 Purchases Invoices and Goods Received.pdf p.2 P-404",
+        "08 Assets Repairs Leases Maybe.xlsx Photo Booth row"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "Capitalize €20,000 photo booth in PPE",
+      "independentChallenge": "Independent position: Capitalize €20,000 as PPE; depreciate from 10 May. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The €20,000 photo booth is a controlled long-term resource available for use on 10 May. It is PPE rather than a marketing expense.",
+      "statementEffect": {
+        "profit": 20000,
+        "cash": 0,
+        "assets": 20000,
+        "liabilities": 0,
+        "equity": 20000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D045",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Machine belt and calibration.",
+      "answer": "Expense €10,000 as repair/maintenance.",
+      "evidence": [
+        "06 Purchases Invoices and Goods Received.pdf, p. 2, R-771",
+        "06 Purchases Invoices and Goods Received.pdf p.2 R-771"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "Expense €10,000 belt, cleaning and calibration",
+      "independentChallenge": "Independent position: Expense €10,000 as repair/maintenance. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The belt, cleaning and calibration restored normal output without increasing capacity or useful life. The €10,000 is repair expense.",
+      "statementEffect": {
+        "profit": -10000,
+        "cash": 0,
+        "assets": -10000,
+        "liabilities": 0,
+        "equity": -10000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D046",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Owner villa deposit.",
+      "answer": "Classify €70,000 villa as owner distribution.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, owner villa",
+        "09 Loans Owner Card and Legal Problems.pdf p.1",
+        "02 Bank Export August.csv VILLA"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€70,000 owner distribution",
+      "independentChallenge": "Independent position: Classify €70,000 villa as owner distribution. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The villa is in the founder's personal name and no customer meeting occurred. The €70,000 payment is an owner distribution, not a business expense.",
+      "statementEffect": {
+        "profit": 70000,
+        "cash": 0,
+        "assets": 0,
+        "liabilities": 0,
+        "equity": 70000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D047",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Owner card spending.",
+      "answer": "Classify €40,000 owner-card spend as owner distribution.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, other owner card",
+        "09 Loans Owner Card and Legal Problems.pdf p.1",
+        "02 Bank Export August.csv OWNERCARD"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€40,000 owner distribution",
+      "independentChallenge": "Independent position: Classify €40,000 owner-card spend as owner distribution. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "No business purpose or approval supports the €40,000 owner-card spending. It is treated as an owner distribution rather than payroll or operating expense.",
+      "statementEffect": {
+        "profit": 40000,
+        "cash": 0,
+        "assets": 0,
+        "liabilities": 0,
+        "equity": 40000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D048",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Physical product materials consumed.",
+      "answer": "Classify €405,000 materials consumed as physical-product COGS.",
+      "evidence": [
+        "05 Warehouse Count Marta Notes.pdf, p. 2, valid delivered sales",
+        "05 Warehouse Count Marta Notes.pdf p.2"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€405,000 physical-product COGS",
+      "independentChallenge": "Independent position: Classify €405,000 materials consumed as physical-product COGS. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The warehouse records identify €405,000 of materials consumed on valid delivered physical-product sales. This is physical-product COGS.",
+      "statementEffect": {
+        "profit": -405000,
+        "cash": 0,
+        "assets": -405000,
+        "liabilities": 0,
+        "equity": -405000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D049",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Event staff payroll.",
+      "answer": "Classify €80,000 event staff payroll as direct service COGS.",
+      "evidence": [
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C4",
+        "07 Payroll Bonuses Contractors NEW.xlsx Event delivery staff row"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€80,000 direct event service cost",
+      "independentChallenge": "Independent position: Classify €80,000 event staff payroll as direct service COGS. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "Event delivery staff work directly on completed customer events. Their €80,000 payroll is direct service cost, while sales and office payroll remain operating expenses.",
+      "statementEffect": {
+        "profit": -80000,
+        "cash": 0,
+        "assets": 0,
+        "liabilities": 0,
+        "equity": -80000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D050",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Sales team payroll.",
+      "answer": "Classify €72,000 sales payroll as operating/selling expense.",
+      "evidence": [
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B5:C5",
+        "07 Payroll Bonuses Contractors NEW.xlsx Sales and partnerships row"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D051",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Office payroll.",
+      "answer": "Classify €96,000 office payroll as administrative expense.",
+      "evidence": [
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B6:C6",
+        "07 Payroll Bonuses Contractors NEW.xlsx Office and finance row"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D052",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Rent.",
+      "answer": "Classify €48,000 rent as operating expense.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 RENT",
+        "02 Bank Export August.csv RENT"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D053",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Marketing.",
+      "answer": "Classify €55,000 marketing as operating expense.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 MKT",
+        "02 Bank Export August.csv MKT"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D054",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Software.",
+      "answer": "Classify €16,000 software as operating expense.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 SOFT",
+        "02 Bank Export August.csv SOFT"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D055",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Utilities.",
+      "answer": "Classify €12,000 utilities as operating expense.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 UTIL",
+        "02 Bank Export August.csv UTIL"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D056",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Depreciation.",
+      "answer": "Classify €24,000 as non-cash depreciation expense / accumulated depreciation.",
+      "evidence": [
+        "08 Assets Repairs Leases Maybe.xlsx, Assets!B8:E8",
+        "08 Assets Repairs Leases Maybe.xlsx Period depreciation row"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€24,000 depreciation expense and accumulated depreciation increase",
+      "independentChallenge": "Independent position: Classify €24,000 as non-cash depreciation expense / accumulated depreciation. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The asset schedule estimates €24,000 depreciation and the assets were available for use. The amount is recognized, but confidence is medium because useful lives are not supplied.",
+      "statementEffect": {
+        "profit": -24000,
+        "cash": 0,
+        "assets": -24000,
+        "liabilities": 0,
+        "equity": -24000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D057",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Bad receivable.",
+      "answer": "Classify €18,000 R-17 as bad-debt impairment/write-off.",
+      "evidence": [
+        "11 Evidence Received After Takeover.pdf, p. 1, R-17 notice",
+        "04 Contracts Returns and Angry Customers.pdf p.2",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€18,000 bad-debt expense and receivable reduction",
+      "independentChallenge": "Independent position: Classify €18,000 R-17 as bad-debt impairment/write-off. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The liquidator notice confirms that the €18,000 R-17 balance was unrecoverable at the reporting date. The receivable is written off or fully impaired.",
+      "statementEffect": {
+        "profit": -18000,
+        "cash": 0,
+        "assets": -18000,
+        "liabilities": 0,
+        "equity": -18000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D058",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Damaged stock.",
+      "answer": "Classify €22,000 as inventory write-off; €2,000 disposal estimate as provision/expense.",
+      "evidence": [
+        "05 Warehouse Count Marta Notes.pdf, pp. 1–2, count and disposal quote",
+        "05 Warehouse Count Marta Notes.pdf pp.1-2",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€22,000 inventory write-down expense; disposal estimate €2,000 disclosed",
+      "independentChallenge": "Independent position: Classify €22,000 as inventory write-off; €2,000 disposal estimate as provision/expense. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The €22,000 basement stock has no saleable value and is written off. The post-takeover assessment says disposal will cost approximately €2,000 and confirms the existing damage, so a €2,000 provision is included with medium confidence.",
+      "statementEffect": {
+        "profit": -24000,
+        "cash": 0,
+        "assets": -22000,
+        "liabilities": 2000,
+        "equity": -24000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": true
+    },
+    {
+      "id": "D059",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Probable legal claim.",
+      "answer": "Classify €25,000 as legal/employee-claim provision and expense.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 2, counsel letter",
+        "09 Loans Owner Card and Legal Problems.pdf p.2",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€25,000 legal expense and provision",
+      "independentChallenge": "Independent position: Classify €25,000 as legal/employee-claim provision and expense. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "External counsel states the employee claim was probable at 31 August and gives a reliable €25,000 best estimate. A provision and expense are recognized.",
+      "statementEffect": {
+        "profit": -25000,
+        "cash": 0,
+        "assets": 0,
+        "liabilities": 25000,
+        "equity": -25000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D060",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Insurance consumed.",
+      "answer": "Insurance consumed: €0 recognized; unresolved due missing source evidence.",
+      "evidence": [
+        "02 Bank Export August.csv, all transaction rows, insurance absent",
+        "02 Bank Export August.csv complete export",
+        "00 BOARD ORDER READ FIRST.pdf p.1"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D061",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Unpaid interest.",
+      "answer": "Classify €2,000 as accrued interest payable.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, interest expense and paid",
+        "11 Evidence Received After Takeover.pdf p.1",
+        "09 Loans Owner Card and Legal Problems.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D062",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Unpaid payroll.",
+      "answer": "Classify €32,000 as accrued payroll liability.",
+      "evidence": [
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL row"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D063",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Unpaid suppliers.",
+      "answer": "Classify €126,000 as trade supplier payable.",
+      "evidence": [
+        "06 Purchases Invoices and Goods Received.pdf, p. 1, supplier confirmations",
+        "06 Purchases Invoices and Goods Received.pdf p.1"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D064",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Delivered NorthStar contract.",
+      "answer": "Recognize €180,000 NorthStar revenue on accepted delivery.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 1, INV-26012",
+        "04 Contracts Returns and Angry Customers.pdf p.1 INV-26012"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€180,000 NorthStar delivered revenue",
+      "independentChallenge": "Independent position: Recognize €180,000 NorthStar revenue on accepted delivery. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "NorthStar accepted the delivered boxes on 12 February. The €180,000 invoice is revenue when accepted, independently of when cash was received.",
+      "statementEffect": {
+        "profit": 180000,
+        "cash": 0,
+        "assets": 180000,
+        "liabilities": 0,
+        "equity": 180000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D065",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Delivered Freedom contract.",
+      "answer": "Recognize €200,000 Freedom revenue on acceptance.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 1, INV-26031",
+        "04 Contracts Returns and Angry Customers.pdf p.1 INV-26031"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€200,000 Freedom delivered revenue",
+      "independentChallenge": "Independent position: Recognize €200,000 Freedom revenue on acceptance. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "Freedom accepted the €200,000 order on 18 March. Revenue is recognized in full and the unpaid €58,000 remains receivable.",
+      "statementEffect": {
+        "profit": 200000,
+        "cash": 0,
+        "assets": 200000,
+        "liabilities": 0,
+        "equity": 200000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D066",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Completed Phoenix event.",
+      "answer": "Recognize €100,000 Phoenix revenue on completed event.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 1, INV-26047",
+        "04 Contracts Returns and Angry Customers.pdf p.1 INV-26047"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€100,000 Phoenix service revenue",
+      "independentChallenge": "Independent position: Recognize €100,000 Phoenix revenue on completed event. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The Phoenix event was completed and accepted on 29 April. The €100,000 service revenue is recognized, leaving €30,000 receivable.",
+      "statementEffect": {
+        "profit": 100000,
+        "cash": 0,
+        "assets": 100000,
+        "liabilities": 0,
+        "equity": 100000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D067",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Delivered Liberty order.",
+      "answer": "Recognize €120,000 Liberty revenue on delivered/accepted order.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 1, INV-26063",
+        "04 Contracts Returns and Angry Customers.pdf p.1 INV-26063"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€120,000 Liberty delivered revenue",
+      "independentChallenge": "Independent position: Recognize €120,000 Liberty revenue on delivered/accepted order. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "Liberty's €120,000 mixed order was delivered and accepted on 20 June. Revenue is recognized and €25,000 remains receivable.",
+      "statementEffect": {
+        "profit": 120000,
+        "cash": 0,
+        "assets": 120000,
+        "liabilities": 0,
+        "equity": 120000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D068",
+      "category": "classification",
+      "reviewTier": "material_judgment",
+      "question": "Classify Undelivered September events.",
+      "answer": "Recognize no August revenue for September events; retain €90,000 liability.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 2, NB-SEP and FF-SEP",
+        "04 Contracts Returns and Angry Customers.pdf p.2"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€0 August revenue, €90,000 contract liabilities for both September events",
+      "independentChallenge": "Independent position: Recognize no August revenue for September events; retain €90,000 liability. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "Neither September event had been delivered by 31 August. The €90,000 received remains a contract liability and no August revenue is recognized.",
+      "statementEffect": {
+        "profit": -90000,
+        "cash": 0,
+        "assets": 0,
+        "liabilities": 90000,
+        "equity": -90000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D069",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Loan principal payment.",
+      "answer": "Classify €19,000 principal payment as financing outflow/reduction of debt.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 PRINCIPAL",
+        "02 Bank Export August.csv PRINCIPAL",
+        "09 Loans Owner Card and Legal Problems.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D070",
+      "category": "classification",
+      "reviewTier": "operational",
+      "question": "Classify Equipment purchase.",
+      "answer": "Classify €80,000 equipment purchases as investing outflow/PPE.",
+      "evidence": [
+        "06 Purchases Invoices and Goods Received.pdf, p. 2, A-910 and P-404",
+        "02 Bank Export August.csv CAPEX rows",
+        "06 Purchases Invoices and Goods Received.pdf p.2"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D071",
+      "category": "estimation",
+      "reviewTier": "material_judgment",
+      "question": "Estimate Closing bad-debt allowance/write-off and document the basis.",
+      "answer": "€18,000 bad-debt write-off.",
+      "evidence": [
+        "11 Evidence Received After Takeover.pdf, p. 1, liquidator notice",
+        "11 Evidence Received After Takeover.pdf p.1",
+        "04 Contracts Returns and Angry Customers.pdf p.2"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€18,000 impairment/write-off of R-17; net AR €168,000",
+      "independentChallenge": "Independent position: €18,000 bad-debt write-off. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The €18,000 R-17 balance is specifically identified and the liquidator expects no distribution. Net closing receivables are therefore €168,000.",
+      "statementEffect": {
+        "profit": -18000,
+        "cash": 0,
+        "assets": -18000,
+        "liabilities": 0,
+        "equity": -18000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D072",
+      "category": "estimation",
+      "reviewTier": "material_judgment",
+      "question": "Estimate Damaged inventory write-off and document the basis.",
+      "answer": "€22,000 damaged-inventory write-off; plus €2,000 disposal provision.",
+      "evidence": [
+        "05 Warehouse Count Marta Notes.pdf, pp. 1–2, €22k basement and no saleable value",
+        "05 Warehouse Count Marta Notes.pdf pp.1-2",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€22,000 write-down of damaged stock",
+      "independentChallenge": "Independent position: €22,000 damaged-inventory write-off; plus €2,000 disposal provision. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The damaged stock's €22,000 carrying amount is reduced to zero. A separate €2,000 disposal provision is included because the independent assessment confirms an expected disposal cost arising from the existing damage.",
+      "statementEffect": {
+        "profit": -24000,
+        "cash": 0,
+        "assets": -22000,
+        "liabilities": 2000,
+        "equity": -24000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": true
+    },
+    {
+      "id": "D073",
+      "category": "estimation",
+      "reviewTier": "material_judgment",
+      "question": "Estimate Legal provision and document the basis.",
+      "answer": "€25,000 legal provision.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 2, counsel letter",
+        "09 Loans Owner Card and Legal Problems.pdf p.2",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€25,000 legal provision; reasonable estimate range €20k–€30k",
+      "independentChallenge": "Independent position: €25,000 legal provision. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "Counsel's best estimate is €25,000 within a €20,000-€30,000 range. The best estimate is used and the range remains visible as uncertainty.",
+      "statementEffect": {
+        "profit": -25000,
+        "cash": 0,
+        "assets": 0,
+        "liabilities": 25000,
+        "equity": -25000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D074",
+      "category": "estimation",
+      "reviewTier": "material_judgment",
+      "question": "Estimate Period depreciation and document the basis.",
+      "answer": "€24,000 period depreciation.",
+      "evidence": [
+        "08 Assets Repairs Leases Maybe.xlsx, Assets!C4:C8, independent schedule note",
+        "08 Assets Repairs Leases Maybe.xlsx Period depreciation row",
+        "06 Purchases Invoices and Goods Received.pdf p.2"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€24,000 January–August depreciation",
+      "independentChallenge": "Independent position: €24,000 period depreciation. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The independent asset schedule gives €24,000 period depreciation. It is used because no stronger amount exists, but useful-life and commissioning support should be obtained.",
+      "statementEffect": {
+        "profit": -24000,
+        "cash": 0,
+        "assets": -24000,
+        "liabilities": 0,
+        "equity": -24000
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D075",
+      "category": "estimation",
+      "reviewTier": "material_judgment",
+      "question": "Estimate Closing inventory and document the basis.",
+      "answer": "€112,000 closing inventory on roll-forward; physical saleable count is €121,000, an unresolved €9,000 contradiction.",
+      "evidence": [
+        "05 Warehouse Count Marta Notes.pdf, pp. 1–2, count and roll-forward",
+        "05 Warehouse Count Marta Notes.pdf pp.1-2"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "€121,000 closing saleable inventory; €9,000 unexplained count surplus",
+      "independentChallenge": "Independent position: €112,000 closing inventory on roll-forward; physical saleable count is €121,000, an unresolved €9,000 contradiction. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The accounting roll-forward gives €112,000: €80,000 opening inventory plus €459,000 purchases less €405,000 consumption and €22,000 write-off. The €121,000 saleable count creates an unresolved €9,000 difference; no unsupported gain is recognized.",
+      "statementEffect": {
+        "profit": -22000,
+        "cash": 0,
+        "assets": -31000,
+        "liabilities": 0,
+        "equity": -22000
+      },
+      "effectBasis": "Compared with management inventory of €143,000. The €22,000 write-off affects profit; the remaining €9,000 count difference is unresolved and is not recognized as a gain.",
+      "changedFromAI": true
+    },
+    {
+      "id": "D076",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Closing receivables and document the basis.",
+      "answer": "€168,000 net closing receivables.",
+      "evidence": [
+        "03 CRM Export Cleaned FINAL.xlsx, CRM Export!E4:I11",
+        "03 CRM Export Cleaned FINAL.xlsx sales rows",
+        "02 Bank Export August.csv receipts",
+        "11 Evidence Received After Takeover.pdf R-17"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D077",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Repair versus improvement amount and document the basis.",
+      "answer": "€10,000 repair; €0 improvement.",
+      "evidence": [
+        "06 Purchases Invoices and Goods Received.pdf, p. 2, R-771",
+        "06 Purchases Invoices and Goods Received.pdf p.2 R-771"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D078",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Insurance expense and document the basis.",
+      "answer": "€0 recognized insurance expense; unresolved/unquantified.",
+      "evidence": [
+        "02 Bank Export August.csv, all rows, insurance absent",
+        "02 Bank Export August.csv complete export",
+        "00 BOARD ORDER READ FIRST.pdf p.1"
+      ],
+      "confidence": "low",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D079",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Interest payable and document the basis.",
+      "answer": "€2,000 interest payable.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, schedule",
+        "09 Loans Owner Card and Legal Problems.pdf p.1",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D080",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Accrued payroll and document the basis.",
+      "answer": "€32,000 accrued payroll.",
+      "evidence": [
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C7",
+        "07 Payroll Bonuses Contractors NEW.xlsx TOTAL row"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D081",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Customer deposit liability and document the basis.",
+      "answer": "€90,000 customer deposit liability.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 2, NB-SEP and FF-SEP",
+        "04 Contracts Returns and Angry Customers.pdf p.2",
+        "02 Bank Export August.csv deposit rows"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D082",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate PPE closing cost and document the basis.",
+      "answer": "€260,000 closing PPE cost.",
+      "evidence": [
+        "08 Assets Repairs Leases Maybe.xlsx, Assets!C4:C7",
+        "08 Assets Repairs Leases Maybe.xlsx rows 4-7",
+        "06 Purchases Invoices and Goods Received.pdf p.2"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D083",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Accumulated depreciation and document the basis.",
+      "answer": "€69,000 accumulated depreciation.",
+      "evidence": [
+        "08 Assets Repairs Leases Maybe.xlsx, Assets!C4:C8",
+        "08 Assets Repairs Leases Maybe.xlsx opening note + period estimate"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D084",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Supplier payable and document the basis.",
+      "answer": "€126,000 supplier payable.",
+      "evidence": [
+        "06 Purchases Invoices and Goods Received.pdf, p. 1, supplier table",
+        "06 Purchases Invoices and Goods Received.pdf p.1"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D085",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Closing loan and document the basis.",
+      "answer": "€131,000 closing loan.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, loan terms",
+        "09 Loans Owner Card and Legal Problems.pdf p.1",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D086",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Physical COGS and document the basis.",
+      "answer": "€405,000 physical COGS.",
+      "evidence": [
+        "05 Warehouse Count Marta Notes.pdf, p. 2, consumed materials",
+        "05 Warehouse Count Marta Notes.pdf p.2"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D087",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Service direct payroll and document the basis.",
+      "answer": "€80,000 service direct payroll.",
+      "evidence": [
+        "07 Payroll Bonuses Contractors NEW.xlsx, Payroll!B4:C4",
+        "07 Payroll Bonuses Contractors NEW.xlsx Event delivery staff"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D088",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Owner distributions and document the basis.",
+      "answer": "€110,000 owner distributions.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 VILLA and OWNERCARD",
+        "02 Bank Export August.csv VILLA/OWNERCARD",
+        "09 Loans Owner Card and Legal Problems.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D089",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Net profit and document the basis.",
+      "answer": "€63,000 corrected net profit before tax.",
+      "evidence": [
+        "05 Warehouse Count Marta Notes.pdf, p. 2, count and consumption",
+        "04 Contracts Returns and Angry Customers.pdf pp.1-2",
+        "05 Warehouse Count Marta Notes.pdf pp.1-2",
+        "07 Payroll Bonuses Contractors NEW.xlsx Payroll",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D090",
+      "category": "estimation",
+      "reviewTier": "operational",
+      "question": "Estimate Closing cash and document the basis.",
+      "answer": "€60,000 closing cash.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 OWNERCARD, closing balance",
+        "02 Bank Export August.csv final balance",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D091",
+      "category": "board_decision",
+      "reviewTier": "material_judgment",
+      "question": "Approve corrected accounts before valuation",
+      "answer": "Yes — approve/use the corrected reconstructed accounts before valuation, subject to explicit unresolved items.",
+      "evidence": [
+        "01 USE THIS NUMBERS FINAL v9.xlsx, Management P&L!A4:C11",
+        "01 USE THIS NUMBERS FINAL v9.xlsx Management P&L",
+        "02 Bank Export August.csv closing cash",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "Approve corrected provisional accounts for board review, subject to €45k supplier and €9k stock investigations; do not call them final audited accounts",
+      "independentChallenge": "Independent position: Yes — approve/use the corrected reconstructed accounts before valuation, subject to explicit unresolved items. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The reconstructed accounts use stronger bank, contract, supplier, warehouse and legal evidence and pass the required reconciliations. They may be used for board and valuation work only with the listed uncertainties disclosed; they are not audited accounts.",
+      "statementEffect": {
+        "profit": null,
+        "cash": null,
+        "assets": null,
+        "liabilities": null,
+        "equity": null
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    },
+    {
+      "id": "D092",
+      "category": "board_decision",
+      "reviewTier": "operational",
+      "question": "Freeze owner-card access",
+      "answer": "Yes — freeze owner-card access pending review and impose approval/reimbursement controls.",
+      "evidence": [
+        "09 Loans Owner Card and Legal Problems.pdf, p. 1, owner spending",
+        "02 Bank Export August.csv VILLA/OWNERCARD",
+        "09 Loans Owner Card and Legal Problems.pdf p.1"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D093",
+      "category": "board_decision",
+      "reviewTier": "operational",
+      "question": "Move September deposits to contract liabilities",
+      "answer": "Yes — move €90,000 September receipts to contract liabilities.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 2, September contracts",
+        "04 Contracts Returns and Angry Customers.pdf p.2"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D094",
+      "category": "board_decision",
+      "reviewTier": "operational",
+      "question": "Begin weekly 13-week cash forecast",
+      "answer": "Yes — begin a weekly 13-week cash forecast.",
+      "evidence": [
+        "02 Bank Export August.csv, 2026-08-31 closing balance",
+        "02 Bank Export August.csv closing cash €60k",
+        "06 Purchases Invoices and Goods Received.pdf p.1 AP €126k"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D095",
+      "category": "board_decision",
+      "reviewTier": "operational",
+      "question": "Stop credit sales to insolvent/high-risk customers",
+      "answer": "Yes — stop/limit credit sales to insolvent/high-risk customers and require credit approval.",
+      "evidence": [
+        "11 Evidence Received After Takeover.pdf, p. 1, R-17 liquidation",
+        "11 Evidence Received After Takeover.pdf R-17"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D096",
+      "category": "board_decision",
+      "reviewTier": "operational",
+      "question": "Dispose of damaged stock",
+      "answer": "Yes — dispose of damaged stock after documenting write-off and €2,000 disposal provision.",
+      "evidence": [
+        "05 Warehouse Count Marta Notes.pdf, p. 2, disposal quote",
+        "05 Warehouse Count Marta Notes.pdf pp.1-2"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D097",
+      "category": "board_decision",
+      "reviewTier": "operational",
+      "question": "Investigate management override and duplicate sources",
+      "answer": "Yes — investigate management override and duplicate/source integrity failures.",
+      "evidence": [
+        "10 Email and WhatsApp Dump DO NOT FORWARD.pdf, pp. 1–3, management instruction messages",
+        "10 Email and WhatsApp Dump DO NOT FORWARD.pdf pp.1-3",
+        "01 USE THIS NUMBERS FINAL v9.xlsx workbook"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D098",
+      "category": "board_decision",
+      "reviewTier": "operational",
+      "question": "Renegotiate supplier terms",
+      "answer": "Yes — renegotiate supplier terms and prioritize the €126,000 payable balance.",
+      "evidence": [
+        "06 Purchases Invoices and Goods Received.pdf, p. 1, €126k confirmed unpaid",
+        "06 Purchases Invoices and Goods Received.pdf p.1",
+        "02 Bank Export August.csv closing cash"
+      ],
+      "confidence": "high",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D099",
+      "category": "board_decision",
+      "reviewTier": "operational",
+      "question": "Continue core Finally Single and event operations",
+      "answer": "Continue core Finally Single and event operations conditionally, with repaired controls and liquidity discipline.",
+      "evidence": [
+        "04 Contracts Returns and Angry Customers.pdf, p. 1, four accepted orders",
+        "04 Contracts Returns and Angry Customers.pdf p.1",
+        "05 Warehouse Count Marta Notes.pdf p.2",
+        "07 Payroll Bonuses Contractors NEW.xlsx Payroll"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student"
+    },
+    {
+      "id": "D100",
+      "category": "board_decision",
+      "reviewTier": "material_judgment",
+      "question": "Use claimed management profit for earn-out",
+      "answer": "No — do not use the claimed €312,000 management profit for earn-out; use independently corrected, board-approved accounts.",
+      "evidence": [
+        "01 USE THIS NUMBERS FINAL v9.xlsx, Management P&L!B4:B11",
+        "01 USE THIS NUMBERS FINAL v9.xlsx Management P&L €312k",
+        "10 Email and WhatsApp Dump DO NOT FORWARD.pdf p.1 attempted €312k instruction",
+        "11 Evidence Received After Takeover.pdf p.1"
+      ],
+      "confidence": "medium",
+      "certificationStatus": "certified_by_student",
+      "aiProposal": "No; reject €312,000 management profit as an earn-out base until independently reconciled",
+      "independentChallenge": "Independent position: No — do not use the claimed €312,000 management profit for earn-out; use independently corrected, board-approved accounts. Stronger evidence is given priority over management labels. Alternatives considered include the management treatment, cash-basis treatment, or no adjustment where applicable; those alternatives are rejected when they conflict with bank, signed/third-party, warehouse, delivery, or legal evidence. Critical evidence that could change this position would be a stronger contemporaneous signed contract, bank confirmation, third-party invoice, or operational record directly contradicting the cited basis.",
+      "studentReasoning": "The €312,000 management profit includes September deposits and loan proceeds as income and omits material corrections. It must not be used for an earn-out; the corrected board-approved result should be used instead.",
+      "statementEffect": {
+        "profit": null,
+        "cash": null,
+        "assets": null,
+        "liabilities": null,
+        "equity": null
+      },
+      "effectBasis": "Standalone effect of the selected treatment; overlapping decisions must not be added together.",
+      "changedFromAI": false
+    }
+  ],
+  "schedules": {
+    "revenueAndReceivables": {
+      "openingReceivables": 35000,
+      "deliveredRevenue": 960000,
+      "collections": 809000,
+      "badDebtWriteOff": 18000,
+      "closingReceivables": 168000,
+      "formula": "35,000 + 960,000 - 809,000 - 18,000 = 168,000"
+    },
+    "inventoryAndCOGS": {
+      "openingInventory": 80000,
+      "purchases": 459000,
+      "physicalProductCOGS": 405000,
+      "damagedStockWriteOff": 22000,
+      "closingInventory": 112000,
+      "physicalSaleableCount": 121000,
+      "unresolvedCountDifference": 9000,
+      "formula": "80,000 + 459,000 - 405,000 - 22,000 = 112,000"
+    },
+    "payroll": {
+      "openingPayrollPayable": 15000,
+      "eventStaffExpense": 80000,
+      "salesExpense": 72000,
+      "officeExpense": 96000,
+      "totalExpense": 248000,
+      "cashPaid": 231000,
+      "closingPayrollPayable": 32000,
+      "formula": "15,000 + 248,000 - 231,000 = 32,000"
+    },
+    "operatingExpensesAndAccruals": {
+      "rent": 48000,
+      "marketing": 55000,
+      "software": 16000,
+      "utilities": 12000,
+      "repair": 10000,
+      "badDebt": 18000,
+      "damagedStock": 22000,
+      "disposalProvision": 2000,
+      "legalProvision": 25000,
+      "insurance": 0,
+      "note": "Insurance remains unquantified; €0 is not evidence that no policy existed."
+    },
+    "ppeAndDepreciation": {
+      "openingCost": 180000,
+      "additions": 80000,
+      "closingCost": 260000,
+      "openingAccumulatedDepreciation": 45000,
+      "depreciationExpense": 24000,
+      "closingAccumulatedDepreciation": 69000,
+      "netPPE": 191000,
+      "formula": "Cost 180,000 + 80,000 = 260,000; accumulated depreciation 45,000 + 24,000 = 69,000; net PPE = 191,000"
+    },
+    "debtAndInterest": {
+      "openingPrincipal": 100000,
+      "newBorrowing": 50000,
+      "principalRepaid": 19000,
+      "closingPrincipal": 131000,
+      "interestExpense": 12000,
+      "interestPaid": 10000,
+      "closingInterestPayable": 2000,
+      "formula": "100,000 + 50,000 - 19,000 = 131,000; 12,000 - 10,000 = 2,000"
+    },
+    "equityAndDistributions": {
+      "openingAssets": 330000,
+      "openingLiabilities": 160000,
+      "openingEquity": 170000,
+      "profit": 63000,
+      "distributions": 110000,
+      "closingEquity": 123000,
+      "formula": "170,000 + 63,000 - 110,000 = 123,000"
+    }
+  },
+  "statements": {
+    "profitAndLoss": {
+      "revenue": 960000,
+      "physicalProductCOGS": -405000,
+      "directEventPayroll": -80000,
+      "grossProfit": 475000,
+      "salesPayroll": -72000,
+      "officePayroll": -96000,
+      "rent": -48000,
+      "marketing": -55000,
+      "software": -16000,
+      "utilities": -12000,
+      "repair": -10000,
+      "depreciation": -24000,
+      "badDebt": -18000,
+      "damagedStockWriteOff": -22000,
+      "disposalProvision": -2000,
+      "legalProvision": -25000,
+      "interestExpense": -12000,
+      "netProfitBeforeTax": 63000
+    },
+    "cashFlow": {
+      "openingCash": 80000,
+      "receivableCollections": 809000,
+      "customerDeposits": 90000,
+      "supplierPayments": -378000,
+      "payrollPaid": -231000,
+      "rentPaid": -48000,
+      "marketingPaid": -55000,
+      "softwarePaid": -16000,
+      "utilitiesPaid": -12000,
+      "repairsPaid": -10000,
+      "interestPaid": -10000,
+      "cashFromOperations": 139000,
+      "equipmentPurchases": -80000,
+      "cashFromInvesting": -80000,
+      "newBorrowing": 50000,
+      "principalRepaid": -19000,
+      "ownerDistributions": -110000,
+      "cashFromFinancing": -79000,
+      "netCashChange": -20000,
+      "closingCash": 60000
+    },
+    "balanceSheet": {
+      "cash": 60000,
+      "netReceivables": 168000,
+      "inventory": 112000,
+      "netPPE": 191000,
+      "totalAssets": 531000,
+      "tradePayables": 126000,
+      "payrollPayable": 32000,
+      "customerDeposits": 90000,
+      "loanPrincipal": 131000,
+      "interestPayable": 2000,
+      "legalProvision": 25000,
+      "disposalProvision": 2000,
+      "totalLiabilities": 408000,
+      "equity": 123000,
+      "totalLiabilitiesAndEquity": 531000
+    }
+  },
+  "reconciliations": [
+    {
+      "name": "Balance sheet",
+      "calculation": "531,000 - 408,000 - 123,000",
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Closing cash to bank",
+      "calculation": "60,000 - 60,000",
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Cash-flow roll-forward",
+      "calculation": "80,000 - 20,000 - 60,000",
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Revenue and receivables",
+      "calculation": "35,000 + 960,000 - 809,000 - 18,000 - 168,000",
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Inventory and COGS roll-forward",
+      "calculation": "80,000 + 459,000 - 405,000 - 22,000 - 112,000",
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Physical inventory cross-check",
+      "calculation": "121,000 - 112,000",
+      "difference": 9000,
+      "status": "UNRESOLVED"
+    },
+    {
+      "name": "PPE cost",
+      "calculation": "180,000 + 80,000 - 260,000",
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Accumulated depreciation",
+      "calculation": "45,000 + 24,000 - 69,000",
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Debt principal",
+      "calculation": "100,000 + 50,000 - 19,000 - 131,000",
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Interest",
+      "calculation": "12,000 - 10,000 - 2,000",
+      "difference": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "Equity",
+      "calculation": "170,000 + 63,000 - 110,000 - 123,000",
+      "difference": 0,
+      "status": "PASS"
+    }
+  ],
+  "uncertainties": [
+    {
+      "issue": "Inventory count",
+      "amountOrRange": "€9,000",
+      "treatment": "Not recognized as a gain; accounting inventory remains €112,000",
+      "evidenceNeeded": "SKU count sheets, unit costs, goods received near cut-off and consumption records",
+      "confidence": "medium"
+    },
+    {
+      "issue": "Depreciation",
+      "amountOrRange": "€24,000 estimate",
+      "treatment": "Recognized",
+      "evidenceNeeded": "Asset register, useful lives, residual values and commissioning dates",
+      "confidence": "medium"
+    },
+    {
+      "issue": "Insurance",
+      "amountOrRange": "Unquantified",
+      "treatment": "€0 placeholder; not a verified absence",
+      "evidenceNeeded": "Policies, invoices, payment records and opening prepayment ledger",
+      "confidence": "low"
+    },
+    {
+      "issue": "Disposal provision",
+      "amountOrRange": "€2,000",
+      "treatment": "Recognized because post-period evidence confirms expected disposal cost from existing damage",
+      "evidenceNeeded": "Legal or constructive obligation and disposal commitment",
+      "confidence": "medium"
+    },
+    {
+      "issue": "Opening supplier payable",
+      "amountOrRange": "€45,000",
+      "treatment": "Derived opening AP; no recoverable asset recognized",
+      "evidenceNeeded": "Opening AP ledger and Event Things vendor statement",
+      "confidence": "medium"
+    },
+    {
+      "issue": "Legal claim",
+      "amountOrRange": "€20,000-€30,000",
+      "treatment": "€25,000 best estimate recognized",
+      "evidenceNeeded": "Updated counsel assessment",
+      "confidence": "high"
+    }
+  ],
+  "boardRecommendation": {
+    "decision": "Use the corrected reconstructed accounts for board and valuation work, subject to explicit unresolved items. Do not describe them as audited accounts.",
+    "continueOperations": "Continue the core box and event operations conditionally, with verified contract margins, collection controls and liquidity monitoring.",
+    "immediateActions": [
+      "Reject the €312,000 management profit as an earn-out basis.",
+      "Freeze owner-card access and obtain support for historical spending.",
+      "Reconcile the €45,000 opening supplier payable with Event Things.",
+      "Complete an SKU-level inventory recount and resolve the €9,000 difference.",
+      "Start a weekly 13-week cash forecast and prioritize the €126,000 supplier payable balance.",
+      "Move €90,000 September deposits to contract liabilities and enforce revenue cut-off controls."
+    ]
+  }
+}

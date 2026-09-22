@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DPI HT-01 · Financial Reconstruction</title>
+  <meta name="description" content="Traceable financial reconstruction at 31 August 2026">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%230b1f35%22/><path d=%22M16 42h32M20 36V22m12 14V14m12 22V26%22 stroke=%22%235ed4c5%22 stroke-width=%226%22 stroke-linecap=%22round%22/></svg>">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="mark">DPI</span><span>HT-01 Financial Reconstruction</span></a>
+    <nav><a class="active" href="/">Board view</a><a href="/review/">Decision review</a><a href="/submission.json">Submission JSON</a></nav>
+  </header>
+
+  <main id="app" class="shell" aria-live="polite">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">31 August 2026 · EUR</p>
+        <h1>Traceable reconstruction,<br><span>not a beautiful guess.</span></h1>
+        <p class="lede">Every material number links to case evidence. Uncertainty is visible, the required statements reconcile, and the decision trail can be reproduced.</p>
+      </div>
+      <div class="hero-status">
+        <span class="status pending" id="cert-status">Loading…</span>
+        <p>Student name: <strong id="student-name">—</strong></p>
+        <p>Student ID: <strong id="student-id">—</strong></p>
+        <a class="button" href="/review/">Open decision review →</a>
+      </div>
+    </section>
+
+    <section class="kpis" id="kpis"></section>
+
+    <section class="panel alert-panel">
+      <div><p class="eyebrow">Primary unresolved item</p><h2>€9,000 physical inventory difference</h2></div>
+      <p>The accounting roll-forward supports €112,000, while the physical saleable count is €121,000. No unsupported gain is recognized. An SKU-level recount and cut-off review are required.</p>
+    </section>
+
+    <section class="section-head" id="statements-section"><div><p class="eyebrow">Financial statements</p><h2>Reconstructed results</h2></div><p>Amounts shown in euros. Expenses and cash outflows are presented as negative values.</p></section>
+    <section class="statement-grid" id="statements"></section>
+
+    <section class="section-head" id="checks"><div><p class="eyebrow">Control checks</p><h2>Required reconciliations</h2></div><p>Ten checks pass exactly; one physical inventory cross-check remains deliberately unresolved.</p></section>
+    <section class="panel table-wrap"><table><thead><tr><th>Check</th><th>Calculation</th><th>Difference</th><th>Status</th></tr></thead><tbody id="reconciliations"></tbody></table></section>
+
+    <section class="section-head" id="schedules-section"><div><p class="eyebrow">Supporting schedules</p><h2>How the numbers were built</h2></div><p>Each schedule supplies a reproducible bridge from source evidence to the statements.</p></section>
+    <section class="schedule-grid" id="schedules"></section>
+
+    <section class="section-head" id="evidence-section"><div><p class="eyebrow">Evidence register</p><h2>Sources used in the reconstruction</h2></div><p>Each source is treated as evidence, not automatically as truth. Reliability labels preserve that distinction.</p></section>
+    <section class="panel table-wrap"><table><thead><tr><th>Source file</th><th>Scope</th><th>Reliability</th></tr></thead><tbody id="evidence"></tbody></table></section>
+
+    <section class="section-head" id="decisions-section"><div><p class="eyebrow">Decision register</p><h2>All 100 accounting decisions</h2></div><p>Filter the full register here or use the assessor view for the detailed 25-judgment AI review trail.</p></section>
+    <section class="panel controls main-controls">
+      <label>Search<input id="main-search" type="search" placeholder="Decision, answer or evidence…"></label>
+      <label>Review tier<select id="main-tier"><option value="all">All 100</option><option value="operational">Operational (75)</option><option value="material_judgment">Material judgments (25)</option></select></label>
+      <label>Confidence<select id="main-confidence"><option value="all">All levels</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option></select></label>
+    </section>
+    <p class="result-count" id="main-result-count"></p>
+    <section class="decision-list compact-decisions" id="main-decisions"></section>
+
+    <section class="section-head" id="uncertainty"><div><p class="eyebrow">Material uncertainty</p><h2>What could still change</h2></div><p>These matters are disclosed explicitly instead of being converted into unsupported precision.</p></section>
+    <section class="uncertainty-grid" id="uncertainties"></section>
+
+    <section class="panel recommendation" id="recommendation"></section>
+  </main>
+  <footer><span>DPI HT-01 · Case-based financial reconstruction</span><span>Not audited financial statements</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
