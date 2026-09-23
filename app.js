@@ -49,9 +49,11 @@ function renderMainDecisions() {
   );
 
   document.querySelector('#main-result-count').textContent = `Showing ${rows.length} of ${decisionData.length} decisions`;
-  document.querySelector('#main-decisions').innerHTML = rows.map(decision =>
-    `<details class="decision"><summary><span class="decision-id">${esc(decision.id)}</span><span class="decision-question">${esc(decision.question)}</span><span class="pill ${decision.reviewTier === 'material_judgment' ? 'pending' : 'pass'}">${decision.reviewTier === 'material_judgment' ? 'Material' : 'Operational'}</span><span class="pill ${decision.confidence === 'low' ? 'unresolved' : decision.confidence === 'medium' ? 'pending' : 'pass'}">${esc(decision.confidence)}</span></summary><div class="decision-body"><h4>Final certified answer</h4><p>${esc(decision.answer)}</p>${decision.alternativeTreatment ? `<h4>Alternative treatment considered</h4><p>${esc(decision.alternativeTreatment)}</p>` : ''}<h4>Evidence</h4><ul class="evidence-list">${decision.evidence.map(item => `<li>${esc(item)}</li>`).join('')}</ul><h4>Certification</h4><span class="pill pass">${esc(decision.certificationStatus.replaceAll('_', ' '))}</span></div></details>`
-  ).join('');
+  document.querySelector('#main-decisions').innerHTML = rows.map(decision => {
+    const isCertified = decision.certificationStatus === 'certified_by_student';
+    const answerHeading = isCertified ? 'Final certified answer' : 'Revised answer — pending student review';
+    return `<details class="decision"><summary><span class="decision-id">${esc(decision.id)}</span><span class="decision-question">${esc(decision.question)}</span><span class="pill ${decision.reviewTier === 'material_judgment' ? 'pending' : 'pass'}">${decision.reviewTier === 'material_judgment' ? 'Material' : 'Operational'}</span><span class="pill ${decision.confidence === 'low' ? 'unresolved' : decision.confidence === 'medium' ? 'pending' : 'pass'}">${esc(decision.confidence)}</span></summary><div class="decision-body"><h4>${answerHeading}</h4><p>${esc(decision.answer)}</p>${decision.alternativeTreatment ? `<h4>Alternative treatment considered</h4><p>${esc(decision.alternativeTreatment)}</p>` : ''}<h4>Evidence</h4><ul class="evidence-list">${decision.evidence.map(item => `<li>${esc(item)}</li>`).join('')}</ul><h4>Certification</h4><span class="pill ${isCertified ? 'pass' : 'pending'}">${esc(decision.certificationStatus.replaceAll('_', ' '))}</span></div></details>`;
+  }).join('');
 }
 
 fetch('/submission.json')
