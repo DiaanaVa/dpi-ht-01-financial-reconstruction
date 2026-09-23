@@ -34,23 +34,32 @@ function render() {
   document.querySelector('#result-count').textContent = `Showing ${rows.length} of ${all.length} decisions`;
   document.querySelector('#decisions').innerHTML = rows.map(decision => {
     const flags = [
+      decision.certificationStatus === 'pending_student_review' ? '<span class="pill pending">Pending student review</span>' : '',
       disagreementIds.has(decision.id) ? '<span class="pill unresolved">Agent disagreement</span>' : '',
       decision.changedFromAI ? '<span class="pill changed">Changed from AI</span>' : '',
       unresolvedIds.has(decision.id) ? '<span class="pill unresolved">Unresolved</span>' : ''
     ].join('');
 
+    const reasoningHeading = decision.certificationStatus === 'pending_student_review'
+      ? 'Proposed reasoning — pending student review'
+      : 'Final student reasoning';
     const materialTrail = decision.reviewTier === 'material_judgment' ? `
       <div class="judgment-grid">
         <div class="judgment-box"><h4>First AI proposal</h4><p>${esc(decision.aiProposal)}</p></div>
         <div class="judgment-box"><h4>Independent challenge</h4><p>${esc(decision.independentChallenge)}</p></div>
       </div>
-      <h4>Final student reasoning</h4><p>${esc(decision.studentReasoning)}</p>
+      <h4>${reasoningHeading}</h4><p>${esc(decision.studentReasoning)}</p>
       ${decision.alternativeTreatment ? `<h4>Alternative treatment considered</h4><p>${esc(decision.alternativeTreatment)}</p>` : ''}
       <h4>Statement effect</h4><div class="effect">${Object.entries(decision.statementEffect || {}).map(([key, value]) => `<span>${esc(key)}: ${euro(value)}</span>`).join('')}</div>
       ${decision.effectBasis ? `<p class="effect-basis"><strong>Effect basis:</strong> ${esc(decision.effectBasis)}</p>` : ''}
       <p class="changed-answer"><strong>Changed from first AI answer:</strong> ${decision.changedFromAI ? 'Yes' : 'No'}</p>` : '';
 
-    return `<details class="decision ${disagreementIds.has(decision.id) ? 'has-disagreement' : ''} ${decision.changedFromAI ? 'has-change' : ''} ${unresolvedIds.has(decision.id) ? 'has-unresolved' : ''}"><summary><span class="decision-id">${esc(decision.id)}</span><span class="decision-question">${esc(decision.question)}</span><span class="pill ${decision.reviewTier === 'material_judgment' ? 'pending' : 'pass'}">${decision.reviewTier === 'material_judgment' ? 'Material' : 'Operational'}</span><span class="pill ${decision.confidence === 'low' ? 'unresolved' : decision.confidence === 'medium' ? 'pending' : 'pass'}">${esc(decision.confidence)}</span></summary><div class="decision-body"><div class="flag-row">${flags}</div><h4>Final certified answer</h4><p>${esc(decision.answer)}</p>${materialTrail}<h4>Evidence</h4><ul class="evidence-list">${decision.evidence.map(item => `<li>${esc(item)}</li>`).join('')}</ul><h4>Certification</h4><p><span class="pill pass">${esc(decision.certificationStatus.replaceAll('_', ' '))}</span></p></div></details>`;
+    const answerHeading = decision.certificationStatus === 'pending_student_review'
+      ? 'Revised answer — pending student review'
+      : 'Final certified answer';
+    const certificationClass = decision.certificationStatus === 'certified_by_student' ? 'pass' : 'pending';
+
+    return `<details class="decision ${disagreementIds.has(decision.id) ? 'has-disagreement' : ''} ${decision.changedFromAI ? 'has-change' : ''} ${unresolvedIds.has(decision.id) ? 'has-unresolved' : ''}"><summary><span class="decision-id">${esc(decision.id)}</span><span class="decision-question">${esc(decision.question)}</span><span class="pill ${decision.reviewTier === 'material_judgment' ? 'pending' : 'pass'}">${decision.reviewTier === 'material_judgment' ? 'Material' : 'Operational'}</span><span class="pill ${decision.confidence === 'low' ? 'unresolved' : decision.confidence === 'medium' ? 'pending' : 'pass'}">${esc(decision.confidence)}</span></summary><div class="decision-body"><div class="flag-row">${flags}</div><h4>${answerHeading}</h4><p>${esc(decision.answer)}</p>${materialTrail}<h4>Evidence</h4><ul class="evidence-list">${decision.evidence.map(item => `<li>${esc(item)}</li>`).join('')}</ul><h4>Certification</h4><p><span class="pill ${certificationClass}">${esc(decision.certificationStatus.replaceAll('_', ' '))}</span></p></div></details>`;
   }).join('');
 }
 
@@ -79,6 +88,9 @@ fetch('/submission.json')
       <a href="#decisions" class="button" data-filter-unresolved>Show linked decisions</a>`;
 
     document.querySelector('[data-filter-unresolved]').addEventListener('click', () => {
+      document.querySelector('#search').value = '';
+      document.querySelector('#tier').value = 'all';
+      document.querySelector('#confidence').value = 'all';
       document.querySelector('#focus').value = 'unresolved';
       render();
     });
